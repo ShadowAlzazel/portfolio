@@ -5,6 +5,7 @@
 
   // ── EDIT YOUR INFO HERE ───────────────────────────────────────
   const name       = 'ALFREDO PASTEN JR';
+  const username   = 'SHADOWALZAZEL';
   const title      = 'CALIFORNIA STATE UNIVERSITY - LONG BEACH';
   const bio        = 'Hello, don\'t mind me, I am just making AGI real quick. ';
   const email      = 'pastenalfredojr@email.com';
@@ -68,6 +69,14 @@
         'Another bullet point about what you did.',
         'Quantify impact where you can — numbers stand out.',
       ],
+    },
+    {
+      role:    'Student',
+      company: 'UNIVERSITY OF CALIFORNIA IRVINE',
+      period:  'Jun. 2023 — Aug. 2023',
+      points:  [
+        'A Leadership program - TODO',
+      ],
     }
   ];
 
@@ -116,42 +125,42 @@
       name: 'Himiko',
       tags: ['Ollama', 'Elevenlabs', 'Pytorch', 'Discord', 'Whisper'],
       desc: 'My Crown Jewel',
-      link: 'https://github.com/',
+      link: 'https://github.com/ShadowAlzazel/himiko',
     },
     {
       id:   'ID_01',
       name: 'My Portfolio',
       tags: ['Svelte', 'Vercel'],
       desc: 'A short description of this project — TODO',
-      link: 'https://github.com/',
+      link: 'https://github.com/ShadowAlzazel/portfolio',
     },
     {
       id:   'ID_02',
       name: 'Project: Magic Missile',
       tags: ['Unity', 'C#', 'Firebase'],
       desc: 'A short description of this project — TODO',
-      link: 'https://github.com/',
+      link: 'https://github.com/ShadowAlzazel/Project-Magic-Missile',
     },
     {
       id:   'ID_03',
       name: 'Minecraft Odyssey',
       tags: ['Kotlin', 'Java', 'BlockBench'],
       desc: 'A short description of this project — TODO',
-      link: 'https://github.com/',
+      link: 'https://github.com/ShadowAlzazel/MinecraftOdyssey',
     },
     {
       id:   'ID_04',
       name: 'Odyssey Wiki',
       tags: ['Svelte', 'Sveltepress'],
       desc: 'A short description of this project — TODO',
-      link: 'https://github.com/',
+      link: 'https://github.com/ShadowAlzazel/odyssey-wiki',
     },
     {
       id:   'ID_05',
       name: 'MinervaCraft',
       tags: ['Python', 'JS', 'Ollama'],
       desc: 'A short description of this project — TODO',
-      link: 'https://github.com/',
+      link: 'https://github.com/ShadowAlzazel/MinervaCraft',
     },
     {
       id:   'ID_06',
@@ -163,16 +172,16 @@
     {
       id:   'ID_07',
       name: 'SocialAgent Eve',
-      tags: ['Python', 'ML', 'Elliptic'],
+      tags: ['Python', 'Discord', 'Ollama'],
       desc: 'TODO',
-      link: 'https://github.com/ShadowAlzazel/CECS458AIProject/tree/final',
+      link: 'https://github.com/NickNojiri/SocialAgent-Team10',
     },
         {
       id:   'ID_08',
       name: 'Street Eats',
       tags: ['Javascript', 'Expo', 'React'],
       desc: 'TODO',
-      link: 'https://github.com/ShadowAlzazel/CECS458AIProject/tree/final',
+      link: 'https://github.com/ShadowAlzazel/Street-Eats',
     },
   ];
   // ─────────────────────────────────────────────────────────────
@@ -240,7 +249,7 @@
 
 <!-- TOP NAV -->
 <nav class="topnav" class:dark>
-  <span class="nav-id">◈ {name.split(' ')[0].toUpperCase()}</span>
+  <span class="nav-id">◈ ACCESSING_PORTFOLIO(NAME = {name.toUpperCase()}, USER = SHADOWALZAZEL);</span>
   <button class="dark-toggle" on:click={toggleDark} aria-label="Toggle dark mode">
     {#if dark}
       <span>○ LIGHT</span>
