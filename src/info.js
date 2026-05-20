@@ -37,7 +37,7 @@ export const projects = [
     name: 'Odyssey Wiki',
     tags: ['Svelte', 'Sveltepress'],
     desc: 'The accompanying wiki to the Odyssey Project, it was made using sveltepress to get that nice wiki feel.',
-    link: 'https://github.com/ShadowAlzazel/odyssey-wiki',
+    link: 'https://odyssey-wiki.netlify.app/',
   },
   {
     id:   'ID_05',
