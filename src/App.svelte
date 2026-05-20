@@ -9,7 +9,9 @@
   const bio        = 'Hello, don\'t mind me, I am just making AGI real quick. ';
   const email      = 'pastenalfredojr@email.com';
   const github     = 'https://github.com/ShadowAlzazel';
-  const linkedin   = 'https://www.linkedin.com/in/alfredo-pasten-jr/';
+  const linkedin   = 'https://www.linkedin.com/in/alfredo-pasten-jr';
+  const portfolio  = 'https://www.shadowalzazel.dev'
+  const resume     = '/resume.pdf'
 
   // ── SIDEBAR STATS — shown in the wiki panel ───────────────────
   // Each skill has a value 0–100 that renders as a HUD progress bar
@@ -49,8 +51,8 @@
       stats: [
         { name: 'Git',        val: 95 },
         { name: 'Docker',     val: 90 },
-        { name: 'Unity',      val: 81 },
-        { name: 'Blockbench',      val: 78 },
+        { name: 'Blockbench', val: 81 },
+        { name: 'Unity',      val: 71 },
       ],
     },
   ];
@@ -69,36 +71,108 @@
     }
   ];
 
+  // ── EDUCATION ────────────────────────────────────────────────
+  const education = [
+    {
+      school: 'CALIFORNIA STATE UNIVERSITY LONG BEACH',
+      location: 'LONG BEACH, CA',
+      period:  'Aug. 2023 — 2026',
+      points:  [
+        'Bachelors of Science in Computer Science',
+        'Machine Learning / Artificial Intelligence Track',
+      ],
+    },
+    {
+      school: 'HANYANG UNIVERSITY',
+      location: 'SEOUL, SOUTH KOREA',
+      period:  'Dec. 2025 — Jan. 2026',
+      points:  [
+        'Studied abroad at Hanyang International Winter School',
+      ],
+    },
+    {
+      school: 'LONG BEACH CITY COLLEGE',
+      location: 'LONG BEACH, CA',
+      period:  'Aug. 2021 — Jun. 2023',
+      points:  [
+        'Undergraduate in Computer Science',
+      ],
+    },
+        {
+      school: 'UNIVERSITY OF CALIFORNIA BERKELEY',
+      location: 'BERKELEY, CA',
+      period:  'Aug. 2020 — May. 2021',
+      points:  [
+        'Undergraduate in Electrical Engineering Computer Science',
+      ],
+    }
+  ];
+
   // ── PROJECTS ──────────────────────────────────────────────────
   // Add project description here. Keep it to two or three sentences so the card stays clean.
   const projects = [
     {
+      id:   'ID_00',
+      name: 'Himiko',
+      tags: ['Ollama', 'Elevenlabs', 'Pytorch', 'Discord', 'Whisper'],
+      desc: 'My Crown Jewel',
+      link: 'https://github.com/',
+    },
+    {
       id:   'ID_01',
-      name: 'Project Alpha',
-      tags: ['Svelte', 'Canvas', 'TypeScript'],
+      name: 'My Portfolio',
+      tags: ['Svelte', 'Vercel'],
       desc: 'A short description of this project — TODO',
       link: 'https://github.com/',
     },
     {
       id:   'ID_02',
-      name: 'Project Beta',
+      name: 'Project: Magic Missile',
       tags: ['Unity', 'C#', 'Firebase'],
       desc: 'A short description of this project — TODO',
       link: 'https://github.com/',
     },
     {
       id:   'ID_03',
-      name: 'Project Gamma',
-      tags: ['React', 'Node', 'Postgres'],
+      name: 'Minecraft Odyssey',
+      tags: ['Kotlin', 'Java', 'BlockBench'],
       desc: 'A short description of this project — TODO',
       link: 'https://github.com/',
     },
     {
       id:   'ID_04',
-      name: 'Project Delta',
-      tags: ['Python', 'ML', 'API'],
+      name: 'Odyssey Wiki',
+      tags: ['Svelte', 'Sveltepress'],
       desc: 'A short description of this project — TODO',
       link: 'https://github.com/',
+    },
+    {
+      id:   'ID_05',
+      name: 'MinervaCraft',
+      tags: ['Python', 'JS', 'Ollama'],
+      desc: 'A short description of this project — TODO',
+      link: 'https://github.com/',
+    },
+    {
+      id:   'ID_06',
+      name: 'CryptoCompliance',
+      tags: ['Python', 'ML', 'Elliptic', 'Torch'],
+      desc: 'A School Project for Graph-Based Classification of Illicit Bitcoin Transactions. \n Here is the youtube presentation https://youtu.be/roUuW_PnEtg',
+      link: 'https://github.com/ShadowAlzazel/CECS458AIProject/tree/final',
+    },
+    {
+      id:   'ID_07',
+      name: 'SocialAgent Eve',
+      tags: ['Python', 'ML', 'Elliptic'],
+      desc: 'TODO',
+      link: 'https://github.com/ShadowAlzazel/CECS458AIProject/tree/final',
+    },
+        {
+      id:   'ID_08',
+      name: 'Street Eats',
+      tags: ['Javascript', 'Expo', 'React'],
+      desc: 'TODO',
+      link: 'https://github.com/ShadowAlzazel/CECS458AIProject/tree/final',
     },
   ];
   // ─────────────────────────────────────────────────────────────
@@ -115,7 +189,9 @@
     { id: 'hero',       label: 'INIT',       icon: '◈' },
     { id: 'projects',   label: 'PROJECTS',   icon: '◧' },
     { id: 'experience', label: 'EXPERIENCE', icon: '◩' },
+    { id: 'education',  label: 'EDUCATION',  icon: '◬' },
     { id: 'skills',     label: 'SKILLS',     icon: '◫' },
+    //{ id: 'resume',     label: 'RESUME',     icon: '◰' },
     { id: 'contact',    label: 'CONTACT',    icon: '◉' },
   ];
   let activeSec = 'hero';
@@ -230,6 +306,7 @@
       <div class="hero-actions">
         <button class="btn-primary" on:click={() => scrollTo('projects')}>VIEW PROJECTS</button>
         <a class="btn-ghost" href="mailto:{email}">CONTACT</a>
+        <a class="btn-ghost" href="/resume.pdf" target="_blank" rel="noopener">RESUME</a> 
       </div>
     </div>
     <div class="hero-telemetry">
@@ -293,10 +370,36 @@
     </div>
   </section>
 
+  <!-- EDUCATION -->
+  <section id="education" class="section" data-id="education">
+    <div class="section-header" class:visible={visible['education']}>
+      <span class="section-id">// 03</span>
+      <h2>EDUCATION</h2>
+      <div class="header-line"></div>
+    </div>
+    <div class="exp-list" class:visible={visible['education']}>
+      {#each education as school, i}
+        <div class="exp-item" style="--delay:{i * 100}ms">
+          <div class="exp-left">
+            <div class="exp-school">{school.school}</div>
+            <div class="exp-company">{school.location}</div>
+            <div class="exp-period">{school.period}</div>
+          </div>
+          <div class="exp-divider"></div>
+          <ul class="exp-points">
+            {#each school.points as pt}
+              <li><span class="bullet">▸</span>{pt}</li>
+            {/each}
+          </ul>
+        </div>
+      {/each}
+    </div>
+  </section>
+
   <!-- SKILLS (full breakdown page — stats are in sidebar too) -->
   <section id="skills" class="section" data-id="skills">
     <div class="section-header" class:visible={visible['skills']}>
-      <span class="section-id">// 03</span>
+      <span class="section-id">// 04</span>
       <h2>SKILLS</h2>
       <div class="header-line"></div>
     </div>
@@ -328,10 +431,14 @@
   <!-- CONTACT -->
   <section id="contact" class="section contact-section" data-id="contact">
     <div class="contact-inner" class:visible={visible['contact']}>
-      <span class="section-id">// 04</span>
+      <span class="section-id">// 05</span>
       <h2 class="contact-heading">LET'S WORK<br/><em>TOGETHER</em></h2>
       <p class="contact-sub">Open to new opportunities, collaborations, and interesting problems.</p>
       <div class="contact-links">
+        <a href={resume} target="_blank" rel="noopener" class="contact-link">
+          <span class="link-label">RESUME</span>
+          <span class="link-value">My Resume</span>
+        </a>
         <a href="mailto:{email}" class="contact-link">
           <span class="link-label">EMAIL</span>
           <span class="link-value">{email}</span>
@@ -343,6 +450,10 @@
         <a href={linkedin} target="_blank" rel="noopener" class="contact-link">
           <span class="link-label">LINKEDIN</span>
           <span class="link-value">{linkedin.replace('https://', '')}</span>
+        </a>
+          <a href={portfolio} target="_blank" rel="noopener" class="contact-link">
+          <span class="link-label">PORTFOLIO</span>
+          <span class="link-value">{portfolio.replace('https://', '')}</span>
         </a>
       </div>
     </div>
