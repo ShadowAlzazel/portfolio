@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --v: 143, 29, 209;
+  --f: 209, 29, 185;
+  --p: 209, 29, 95;
+  --bg: #e5e5ec;
+  --violet:    rgba(var(--v), 1);
+  --violet-60: rgba(var(--v), 0.60);
+  --violet-30: rgba(var(--v), 0.30);
+  --violet-10: rgba(var(--v), 0.10);
+  --fuchsia:    rgba(var(--f), 1);
+  --fuchsia-40: rgba(var(--f), 0.40);
+  --fuchsia-15: rgba(var(--f), 0.15);
+  --deep-pink:    rgba(var(--p), 1);
+  --deep-pink-70: rgba(var(--p), 0.70);
+  --deep-pink-40: rgba(var(--p), 0.40);
+  --deep-pink-15: rgba(var(--p), 0.15);
+  --mono:    'Share Tech Mono', monospace;
+  --display: 'Rajdhani', sans-serif;
+}
+
+/* dark mode — same hue palette, inverted surface */
+html.dark {
+  --bg: #1a1823;
+  /* violet lightens slightly so it reads on dark bg */
+  --v: 143, 29, 209;
+  --f: 209, 29, 185;
+  --p: 209, 29, 95;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--violet);
+  font-family: var(--mono);
+  cursor: none;
+  overflow-x: hidden;
+  transition: background 0.3s, color 0.3s;
+}
+
+::selection {
+  background: var(--violet);
+  color: var(--bg);
+}
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(var(--v), 0.25); }

@@ -1,0 +1,7 @@
+  // ── EDIT YOUR INFO HERE ───────────────────────────────────────
+  const name       = 'ALFREDO PASTEN JR';
+  const title      = 'CALIFORNIA STATE UNIVERSITY - LONG BEACH';
+  const bio        = 'Hello, don\'t mind me, I am just making AGI real quick. ';
+  const email      = 'pastenalfredojr@email.com';
+  const github     = 'https://github.com/ShadowAlzazel';
+  const linkedin   = 'https://www.linkedin.com/in/alfredo-pasten-jr/';
