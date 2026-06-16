@@ -15,14 +15,14 @@ export const projects = [
     id:   'ID_01',
     name: 'My Portfolio',
     tags: ['Svelte', 'Vercel'],
-    desc: 'Just this portfolio, don\'t get stuck in a self-reference though. Using svelte for the frontend and vercel for easy deployments',
+    desc: 'Just `this` portfolio, don\'t get stuck in a self-reference though. Using svelte for the frontend and vercel for easy deployments.',
     link: 'https://github.com/ShadowAlzazel/portfolio',
   },
   {
     id:   'ID_02',
     name: 'Project: Magic Missile',
     tags: ['Unity', 'C#', 'Firebase'],
-    desc: 'The Current Project I am working on, a character based game with a focus on a style UI and setting.',
+    desc: 'My most recent project, a character based game with a focus on a style UI and setting.',
     link: 'https://github.com/ShadowAlzazel/Project-Magic-Missile',
   },
   {
@@ -76,9 +76,8 @@ export const experience = [
     company: 'CALIFORNIA STATE UNIVERSITY - LONG BEACH',
     period:  '2025 — PRESENT',
     points:  [
-      'Describe a key achievement or responsibility here.',
-      'Another bullet point about what you did.',
-      'Quantify impact where you can — numbers stand out.',
+      'Collaborated with faculty on course logistics and independently led proctoring responsibilities.',
+      'Created backend tools with SQLite to automate grades and make emailing easier for the faculty.',
     ],
   },
   {
@@ -86,7 +85,8 @@ export const experience = [
     company: 'UNIVERSITY OF CALIFORNIA IRVINE',
     period:  'Jun. 2023 — Aug. 2023',
     points:  [
-      'A Leadership program - TODO',
+      'A Leadership program focused on meeting industry leaders and learning from them.',
+      'Had the oppurtunity to present in front of the VPs of Nvida and the Mayor of Irvine!'
     ],
   }
 ];

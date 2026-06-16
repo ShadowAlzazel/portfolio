@@ -131,6 +131,11 @@
   <div class="sidebar-footer">REC · TELEMETRY · ON</div>
 </aside>
 
+<!-- TAB -->
+<svelte:head>
+	<title>ShadowAlzazel's Portfolio</title>
+</svelte:head>
+
 <!-- MAIN CONTENT (offset for sidebar) -->
 <main class:dark>
 
@@ -485,7 +490,7 @@
   }
 
   .section {
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 120px 72px 80px;
     position: relative;
   }
