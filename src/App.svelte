@@ -150,6 +150,7 @@
         <button class="btn-primary" on:click={() => scrollTo('projects')}>VIEW PROJECTS</button>
         <a class="btn-ghost" href="mailto:{email}">CONTACT</a>
         <a class="btn-ghost" href="/resume.pdf" target="_blank" rel="noopener">RESUME</a> 
+        <a class="btn-ghost" href={github} target="_blank" rel="noopener">GITHUB</a> 
       </div>
     </div>
     <div class="hero-telemetry">
