@@ -3,65 +3,69 @@
 
 // ── PROJECTS ──────────────────────────────────────────────────
 // Add project description here. Keep it to two or three sentences so the card stays clean.
+// Newest first. Card IDs (ID_00, ID_01, ...) are generated from the order, so no id field is needed.
 export const projects = [
   {
-    id:   'ID_00',
+    name: 'Null Colony',
+    tags: ['Python', 'Svelte', 'MCP', 'JSON-RPC', 'Caddy'],
+    desc: 'A lobby for AI agents that already exist, and the people who work with them. Each hotel on the public register exposes one MCP endpoint where guests list floors, walk into key-locked rooms, chat, whisper, pin notes and pass handoffs.',
+    link: 'https://nullcolony.net',
+  },
+  {
+    name: 'Invictus: Astrum',
+    tags: ['Python', 'FastAPI', 'Numba', 'Svelte', 'Three.js'],
+    desc: 'A physics-driven RTS with military tactical systems, played on a true-scale star-system simulation. Multiplayer lobbies, fog of war enforced by the server, fleets with NATO-style order-of-battle charts, and orbital station keeping.',
+    link: 'https://github.com/ShadowAlzazel/invictus-astrum',
+  },
+  {
     name: 'Himiko',
     tags: ['Ollama', 'Elevenlabs', 'Pytorch', 'Discord', 'Whisper'],
     desc: 'My Crown Jewel, an AI Agent that interfaces with discord, Vtube Studio, Minecraft, and many more modules',
     link: 'https://github.com/ShadowAlzazel/himiko',
   },
   {
-    id:   'ID_01',
     name: 'My Portfolio',
     tags: ['Svelte', 'Vercel'],
     desc: 'Just `this` portfolio, don\'t get stuck in a self-reference though. Using svelte for the frontend and vercel for easy deployments.',
     link: 'https://github.com/ShadowAlzazel/portfolio',
   },
   {
-    id:   'ID_02',
     name: 'Project: Magic Missile',
     tags: ['Unity', 'C#', 'Firebase'],
     desc: 'My most recent project, a character based game with a focus on a style UI and setting.',
     link: 'https://github.com/ShadowAlzazel/Project-Magic-Missile',
   },
   {
-    id:   'ID_03',
     name: 'Minecraft Odyssey',
     tags: ['Kotlin', 'Java', 'BlockBench'],
     desc: 'A large Minecraft expansion that is a Plugin, Datapack and Resourcepack that adds items, biomes, dimensions and dungeons. All runs server side so vanilla clients can join!',
     link: 'https://github.com/ShadowAlzazel/MinecraftOdyssey',
   },
   {
-    id:   'ID_04',
     name: 'Odyssey Wiki',
     tags: ['Svelte', 'Sveltepress'],
     desc: 'The accompanying wiki to the Odyssey Project, it was made using sveltepress to get that nice wiki feel.',
     link: 'https://odyssey-wiki.netlify.app/',
   },
   {
-    id:   'ID_05',
     name: 'MinervaCraft',
     tags: ['Python', 'JS-Pybridge', 'Ollama', 'Docker'],
     desc: 'A project inspired by MindCraft (A Repo I contribute to) made in python to have custom AI Agents play on Minecraft Servers from their own docker container.',
     link: 'https://github.com/ShadowAlzazel/MinervaCraft',
   },
   {
-    id:   'ID_06',
     name: 'CryptoCompliance',
     tags: ['Python', 'ML', 'Elliptic', 'Torch'],
     desc: 'A School Project for Graph-Based Classification of Illicit Bitcoin Transactions. \n Here is the youtube presentation https://youtu.be/roUuW_PnEtg',
     link: 'https://github.com/ShadowAlzazel/CECS458AIProject/tree/final',
   },
   {
-    id:   'ID_07',
     name: 'SocialAgent Eve',
     tags: ['Python', 'Discord', 'Ollama', 'Docker'],
     desc: 'A School Project that handles social and event planning discord bot with a personalized LLM or local AI all handled via Docker containers.',
     link: 'https://github.com/NickNojiri/SocialAgent-Team10',
   },
-      {
-    id:   'ID_08',
+  {
     name: 'Street Eats',
     tags: ['Javascript', 'Expo', 'React'],
     desc: 'A React based mobile app and webapp to discover and rate street vendors all in your local area.',
@@ -74,7 +78,7 @@ export const experience = [
   {
     role:    'Instructional Student Assistant',
     company: 'CALIFORNIA STATE UNIVERSITY - LONG BEACH',
-    period:  '2025 — PRESENT',
+    period:  'Aug. 2025 — Jan. 2026',
     points:  [
       'Collaborated with faculty on course logistics and independently led proctoring responsibilities.',
       'Created backend tools with SQLite to automate grades and make emailing easier for the faculty.',
@@ -86,7 +90,7 @@ export const experience = [
     period:  'Jun. 2023 — Aug. 2023',
     points:  [
       'A Leadership program focused on meeting industry leaders and learning from them.',
-      'Had the oppurtunity to present in front of the VPs of Nvida and the Mayor of Irvine!'
+      'Had the opportunity to present in front of the VPs of NVIDIA and the Mayor of Irvine!'
     ],
   }
 ];
@@ -96,7 +100,15 @@ export const education = [
   {
     school: 'CALIFORNIA STATE UNIVERSITY LONG BEACH',
     location: 'LONG BEACH, CA',
-    period:  'Aug. 2023 — 2026',
+    period:  'Jan. 2027 — EXPECTED',
+    points:  [
+      'Master of Science in Computer Science',
+    ],
+  },
+  {
+    school: 'CALIFORNIA STATE UNIVERSITY LONG BEACH',
+    location: 'LONG BEACH, CA',
+    period:  'Aug. 2023 — Dec. 2026',
     points:  [
       'Bachelors of Science in Computer Science',
       'Machine Learning / Artificial Intelligence Track',
@@ -118,7 +130,7 @@ export const education = [
       'Undergraduate in Computer Science',
     ],
   },
-      {
+  {
     school: 'UNIVERSITY OF CALIFORNIA BERKELEY',
     location: 'BERKELEY, CA',
     period:  'Aug. 2020 — May. 2021',
@@ -131,6 +143,7 @@ export const education = [
 // ── SIDEBAR STATS — shown in the wiki panel ───────────────────
 // Each skill has a value 0–100 that renders as a HUD progress bar
 export const statGroups = [
+  // Scores marked "placeholder" were set during the Oct 2026 update; adjust to taste.
   {
     label: 'LANGUAGES',
     stats: [
@@ -144,30 +157,54 @@ export const statGroups = [
     ],
   },
   {
-    label: 'FRONTEND',
+    label: 'AI / ML',
     stats: [
-      { name: 'Svelte',     val: 90 },
-      { name: 'React',      val: 82 },
-      { name: 'Canvas API', val: 78 },
-      { name: 'WebGL',      val: 55 },
+      { name: 'PyTorch',      val: 80 }, // placeholder
+      { name: 'Ollama',       val: 85 }, // placeholder
+      { name: 'Whisper',      val: 75 }, // placeholder
+      { name: 'StyleTTS2',    val: 70 }, // placeholder
+      { name: 'MCP',          val: 85 }, // placeholder
     ],
   },
   {
-    label: 'BACKEND',
+    label: 'SIMULATION',
     stats: [
+      { name: 'NumPy',        val: 88 }, // placeholder
+      { name: 'Numba',        val: 80 }, // placeholder
+      { name: 'Skyfield',     val: 72 }, // placeholder (JPL DE421 ephemerides)
+      { name: 'Astropy',      val: 70 }, // placeholder
+      { name: 'Pandas',       val: 75 }, // placeholder (with PyArrow / Parquet)
+    ],
+  },
+  {
+    label: 'FRONTEND',
+    stats: [
+      { name: 'Svelte',     val: 90 },
+      { name: 'SvelteKit',  val: 80 }, // placeholder
+      { name: 'Three.js',   val: 75 }, // placeholder
+      { name: 'React',      val: 82 },
+      { name: 'Canvas API', val: 78 },
+    ],
+  },
+  {
+    label: 'BACKEND & INFRA',
+    stats: [
+      { name: 'FastAPI',    val: 85 }, // placeholder
+      { name: 'WebSockets', val: 80 }, // placeholder
       { name: 'Node.js',    val: 85 },
       { name: 'Firebase',   val: 80 },
-      { name: 'Postgres',   val: 72 },
-      { name: 'Redis',      val: 60 },
+      { name: 'Caddy',      val: 70 }, // placeholder
     ],
   },
   {
     label: 'TOOLS',
     stats: [
-      { name: 'Git',        val: 95 },
-      { name: 'Docker',     val: 90 },
-      { name: 'Blockbench', val: 81 },
-      { name: 'Unity',      val: 71 },
+      { name: 'Git',            val: 95 },
+      { name: 'Docker',         val: 90 },
+      { name: 'Docker Compose', val: 80 }, // placeholder
+      { name: 'Gradle',         val: 78 }, // placeholder (Kotlin DSL, paperweight)
+      { name: 'Blockbench',     val: 81 },
+      { name: 'Unity',          val: 71 },
     ],
   },
 ];

@@ -9,7 +9,7 @@
   const username   = 'SHADOWALZAZEL';
   const title      = 'CALIFORNIA STATE UNIVERSITY - LONG BEACH';
   const bio        = 'Hello, don\'t mind me, I am just making AGI real quick. ';
-  const email      = 'pastenalfredojr@email.com';
+  const email      = 'pastenalfredojr@gmail.com';
   const github     = 'https://github.com/ShadowAlzazel';
   const linkedin   = 'https://www.linkedin.com/in/alfredo-pasten-jr';
   const portfolio  = 'https://www.shadowalzazel.dev'
@@ -117,7 +117,7 @@
         <div class="stat-group-label">{group.label}</div>
         {#each group.stats as stat}
           <div class="stat-row">
-            <div class="stat-name">{stat.name}</div>
+            <div class="stat-name" title={stat.name}>{stat.name}</div>
             <div class="stat-bar-wrap">
               <div class="stat-bar" style="--pct:{stat.val}%"></div>
             </div>
@@ -170,7 +170,7 @@
     <div class="projects-grid" class:visible={visible['projects']}>
       {#each projects as proj, i}
         <a href={proj.link} target="_blank" rel="noopener" class="project-card" style="--delay:{i * 80}ms">
-          <div class="card-id">{proj.id}</div>
+          <div class="card-id">ID_{String(i).padStart(2, '0')}</div>
           <h3 class="card-name">{proj.name}</h3>
           <p class="card-desc">{proj.desc}</p>
           <div class="card-tags">
@@ -779,6 +779,21 @@
     font-size: 9px;
     color: rgba(var(--v), 0.30);
     letter-spacing: 0.04em;
+  }
+
+  /* ── REDUCED MOTION ───────────────────────────────────────────
+     Cards, skill rows and timeline items start at opacity 0 and only fade in
+     once scrolled into view, with a stagger. Readers that honour reduced motion
+     (and many text/screenshot tools) caught some rows mid-fade, so card IDs and
+     skill names looked missing. Show everything at once for them. */
+  @media (prefers-reduced-motion: reduce) {
+    .projects-grid, .exp-list, .skills-full,
+    .project-card, .exp-item, .skill-category, .skill-stat-row {
+      opacity: 1 !important;
+      transform: none !important;
+      animation: none !important;
+      transition: none !important;
+    }
   }
 
   /* ── CONTACT ─────────────────────────────────────────────────── */
