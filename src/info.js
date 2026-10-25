@@ -78,7 +78,7 @@ export const experience = [
   {
     role:    'Instructional Student Assistant',
     company: 'CALIFORNIA STATE UNIVERSITY - LONG BEACH',
-    period:  '2025 — PRESENT',
+    period:  'Aug. 2025 — Jan. 2026',
     points:  [
       'Collaborated with faculty on course logistics and independently led proctoring responsibilities.',
       'Created backend tools with SQLite to automate grades and make emailing easier for the faculty.',
@@ -143,6 +143,7 @@ export const education = [
 // ── SIDEBAR STATS — shown in the wiki panel ───────────────────
 // Each skill has a value 0–100 that renders as a HUD progress bar
 export const statGroups = [
+  // Scores marked "placeholder" were set during the Oct 2026 update; adjust to taste.
   {
     label: 'LANGUAGES',
     stats: [
@@ -156,30 +157,54 @@ export const statGroups = [
     ],
   },
   {
-    label: 'FRONTEND',
+    label: 'AI / ML',
     stats: [
-      { name: 'Svelte',     val: 90 },
-      { name: 'React',      val: 82 },
-      { name: 'Canvas API', val: 78 },
-      { name: 'WebGL',      val: 55 },
+      { name: 'PyTorch',      val: 80 }, // placeholder
+      { name: 'Ollama',       val: 85 }, // placeholder
+      { name: 'Whisper',      val: 75 }, // placeholder
+      { name: 'StyleTTS2',    val: 70 }, // placeholder
+      { name: 'MCP',          val: 85 }, // placeholder
     ],
   },
   {
-    label: 'BACKEND',
+    label: 'SIMULATION',
     stats: [
+      { name: 'NumPy',        val: 88 }, // placeholder
+      { name: 'Numba',        val: 80 }, // placeholder
+      { name: 'Skyfield',     val: 72 }, // placeholder (JPL DE421 ephemerides)
+      { name: 'Astropy',      val: 70 }, // placeholder
+      { name: 'Pandas',       val: 75 }, // placeholder (with PyArrow / Parquet)
+    ],
+  },
+  {
+    label: 'FRONTEND',
+    stats: [
+      { name: 'Svelte',     val: 90 },
+      { name: 'SvelteKit',  val: 80 }, // placeholder
+      { name: 'Three.js',   val: 75 }, // placeholder
+      { name: 'React',      val: 82 },
+      { name: 'Canvas API', val: 78 },
+    ],
+  },
+  {
+    label: 'BACKEND & INFRA',
+    stats: [
+      { name: 'FastAPI',    val: 85 }, // placeholder
+      { name: 'WebSockets', val: 80 }, // placeholder
       { name: 'Node.js',    val: 85 },
       { name: 'Firebase',   val: 80 },
-      { name: 'Postgres',   val: 72 },
-      { name: 'Redis',      val: 60 },
+      { name: 'Caddy',      val: 70 }, // placeholder
     ],
   },
   {
     label: 'TOOLS',
     stats: [
-      { name: 'Git',        val: 95 },
-      { name: 'Docker',     val: 90 },
-      { name: 'Blockbench', val: 81 },
-      { name: 'Unity',      val: 71 },
+      { name: 'Git',            val: 95 },
+      { name: 'Docker',         val: 90 },
+      { name: 'Docker Compose', val: 80 }, // placeholder
+      { name: 'Gradle',         val: 78 }, // placeholder (Kotlin DSL, paperweight)
+      { name: 'Blockbench',     val: 81 },
+      { name: 'Unity',          val: 71 },
     ],
   },
 ];

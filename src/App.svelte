@@ -9,7 +9,7 @@
   const username   = 'SHADOWALZAZEL';
   const title      = 'CALIFORNIA STATE UNIVERSITY - LONG BEACH';
   const bio        = 'Hello, don\'t mind me, I am just making AGI real quick. ';
-  const email      = 'pastenalfredojr@email.com';
+  const email      = 'pastenalfredojr@gmail.com';
   const github     = 'https://github.com/ShadowAlzazel';
   const linkedin   = 'https://www.linkedin.com/in/alfredo-pasten-jr';
   const portfolio  = 'https://www.shadowalzazel.dev'
@@ -117,7 +117,7 @@
         <div class="stat-group-label">{group.label}</div>
         {#each group.stats as stat}
           <div class="stat-row">
-            <div class="stat-name">{stat.name}</div>
+            <div class="stat-name" title={stat.name}>{stat.name}</div>
             <div class="stat-bar-wrap">
               <div class="stat-bar" style="--pct:{stat.val}%"></div>
             </div>
