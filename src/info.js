@@ -7,9 +7,33 @@
 export const projects = [
   {
     name: 'Null Colony',
-    tags: ['Python', 'Svelte', 'MCP', 'JSON-RPC', 'Caddy'],
-    desc: 'A lobby for AI agents that already exist, and the people who work with them. Each hotel on the public register exposes one MCP endpoint where guests list floors, walk into key-locked rooms, chat, whisper, pin notes and pass handoffs.',
+    tags: ['Python', 'Svelte', 'MCP', 'AES-GCM', 'Caddy'],
+    desc: 'A lobby for AI agents that already exist, and the people who work with them. Hotels on the public register each expose one MCP endpoint for rooms, chat and handoffs, and a sealed, encrypted office gives badged agents shared tasks and a GitHub feed.',
     link: 'https://nullcolony.net',
+  },
+  {
+    name: 'Stellafel',
+    tags: ['SvelteKit', 'Drizzle', 'libSQL', 'Better Auth', 'Netlify'],
+    desc: 'A little book of friends and fans: a private, cozy memory book for creators to remember fans as people, with notes, inside jokes, milestones and keepsakes. Friendship hearts come only from time and care, never money, and it never connects to any other platform.',
+    link: 'https://stellafel.com',
+  },
+  {
+    name: 'Fang & Fox Lemma Office',
+    tags: ['Lean 4', 'Mathlib', 'GitHub Actions', 'Math'],
+    desc: 'A shared workroom for attacking open problems from Left to Solve, where every result ships as a readable proof plus a Lean 4 receipt. CI rebuilds every proof against formal-conjectures and rejects sorry; results include fully verified OEIS sequences and a conditional Li\'s criterion.',
+    link: 'https://shadowalzazel.github.io/Fang-and-Fox-Lemma-Office/',
+  },
+  {
+    name: 'Black Swan Jeweled Math',
+    tags: ['Python', 'NumPy', 'mpmath', 'JavaScript', 'Canvas API'],
+    desc: 'A playground for SAT landscapes, golden-ratio rotations, quasicrystals and aperiodic tilings, asking whether an energy landscape can be reshaped so solutions stay fixed but get easier to find. Interactive labs run in the browser, and every claim is tagged proven, open or observed.',
+    link: 'https://shadowalzazel.github.io/black-swan-jeweled-math/',
+  },
+  {
+    name: 'Fleurdelys',
+    tags: ['Python', 'mpmath', 'SciPy', 'Matplotlib', 'JavaScript'],
+    desc: 'Pictures of the Riemann zeta function: the flower traced by the critical line, Newton\'s method on zeta, Mandelbrot copies in its parameter plane, and Collatz extended to the complex plane. A personal geometry playground with an offline 3D viewer, not a proof of anything.',
+    link: 'https://shadowalzazel.github.io/fleurdelys-math/',
   },
   {
     name: 'Invictus: Astrum',
@@ -44,7 +68,7 @@ export const projects = [
   {
     name: 'Odyssey Wiki',
     tags: ['Svelte', 'Sveltepress'],
-    desc: 'The accompanying wiki to the Odyssey Project, it was made using sveltepress to get that nice wiki feel.',
+    desc: 'The accompanying wiki to the Odyssey Project, made using sveltepress to get that nice wiki feel. Enchantments, items and weapon stats are generated straight from the datapack and plugin source, so the wiki never drifts from the game.',
     link: 'https://odyssey-wiki.netlify.app/',
   },
   {
